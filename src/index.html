@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Currency Converter</title>
+    </head>
+
+    <body id="home">
+        <nav class="nav navbar bg-primary navbar-dark">
+          <div class="container">
+            <a href="index.html" class="navbar-brand">Currency Converter</a>
+            </div>
+        </nav>
+
+        <!-- HOME SECTIION -->
+      <header id="home-section">
+        <div class="container">
+        <h1>The Free Currency Converter</h1>
+        <div class="row p-5">
+          <div class="col-lg-6">
+            <div class="textbox">
+              <input type="text" name="" value="1" onchange="updateValue1(event)" id="currencyValue1" >
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="dropdown">
+               <button id="symbolBtn1" onclick="myFunction()" class="dropbtn">USD<i class="fa fa-caret-down"></i></button>
+               <div id="myDropdown" class="dropdown-content">
+                 <!-- <a href="#">Link 1</a> -->
+               </div>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center p-3">
+          <h5>to</h5>
+        </div>
+        </div>
+
+        <div class="row p-5">
+          <div class="col-lg-6">
+            <div class="textbox">
+              <input type="text" name="" value="1" onchange="updateValue2(event)" id="currencyValue2" >
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="dropdown">
+               <button id="symbolBtn2" onclick="myFunction2()" class="dropbtn">NGN<i class="fa fa-caret-down"></i></button>
+               <div id="myDropdown2" class="dropdown-content">
+                 <!-- <a href="#">Link 1</a> -->
+               </div>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center p-5">
+          <button type="button" name="button" id="convertBtn">Convert</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+        <script src="js/main/index.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

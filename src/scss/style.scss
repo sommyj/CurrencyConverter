@@ -1,0 +1,137 @@
+// Main Sass File
+$primary-color:#008ed6;
+$icon-size: 30px;
+
+.navbar-brand{
+      font-size: $icon-size;
+    }
+
+.navbar{
+  border-bottom: #000000 3px solid;
+  opacity: 0.8;
+}
+
+#home-section {
+  background: $primary-color;
+  min-height: 700px;
+  background-size: cover;
+}
+
+#home-section .container{
+  min-height: 700px;
+  background: #fff;
+  border-radius: 10px;
+
+  h1 {
+    font-family: monospace;
+    text-decoration-style: solid;
+    font-style: oblique;
+    text-align: center;
+  }
+}
+.textbox {
+  float: right;
+  font-size:24px;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: $primary-color;
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    width: 300px;
+    text-align: left;
+    border-radius: 10px;
+    cursor: pointer;
+
+    i {
+      float: right;
+    }
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+color: #000000;
+border-bottom: #000000 3px solid;
+
+  i {
+    color: #000000;
+  }
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#myDropdown2 {
+  position:relative;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown-content a:hover{
+  border-bottom: #000000 1px solid;
+  background-color: #ddd
+}
+
+#convertBtn {
+  background-color: $primary-color;
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  width: 300px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+@media only screen and (max-width: 1000px) {
+  .container{
+    text-align:center;
+    height: inherit;
+  }
+  .dropbtn {
+      width: 200px;
+    }
+
+    .dropdown {
+        float:inherit;
+    }
+
+    .textbox {
+      float:inherit;
+      font-size:16px;
+    }
+
+    .dropdown-content {
+        min-width: 200px;
+    }
+
+
+    #convertBtn {
+      width: 200px;
+    }
+
+}
